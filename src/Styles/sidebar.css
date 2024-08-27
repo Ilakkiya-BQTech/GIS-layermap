@@ -185,3 +185,10 @@
     padding: 15px;
 }
 
+.leaflet-top .leaflet-control {
+    margin-top: 70px !important;
+}
+.leaflet-right .leaflet-draw-actions li:first-child a,.leaflet-touch .leaflet-draw-actions a{
+    background: #fff !important;
+    color: #000 !important;
+}

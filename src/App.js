@@ -33,39 +33,39 @@ import Navbar from './Components/Navbar/Navbar';
 
 const App = () => {
   const zoomIn = () => {
-    // Logic to zoom in, typically handled within MapPage or passed down via props
+    
   };
 
   const zoomOut = () => {
-    // Logic to zoom out
+    
   };
 
   const handleBaseMap = () => {
-    // Logic to handle base map changes
+    
   };
 
   const handleTimeZone = () => {
-    // Logic to open the time zone options
+    
   };
 
   const handleTables = () => {
-    // Logic to handle table options
+    
   };
 
   const handleMeasurements = () => {
-    // Logic to handle measurements
+    
   };
 
   const handleBookmarks = () => {
-    // Logic to handle bookmarks
+   
   };
 
   const handleMarkers = () => {
-    // Logic to handle markers
+    
   };
 
   const handlePrint = () => {
-    // Logic to handle print functionality
+   
   };
 
   return (
@@ -87,7 +87,7 @@ const App = () => {
         <div className="map-container">
           <Routes>
             <Route path="/" element={<MapPage />} />
-            {/* Add other routes if needed */}
+           
           </Routes>
         </div>
       </div>

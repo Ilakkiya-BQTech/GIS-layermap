@@ -42,7 +42,7 @@ const SharePopup = ({ onClose, pageLink }) => {
         </div>
       </div>
 
-      {/* Toast Container for displaying toast notifications */}
+      
       <ToastContainer />
     </>
   );

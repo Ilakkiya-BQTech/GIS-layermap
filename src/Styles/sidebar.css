@@ -192,3 +192,75 @@
     background: #fff !important;
     color: #000 !important;
 }
+
+
+.measurement-tool {
+    padding: 10px;
+  }
+  
+  .measurement-tool-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .measurement-tool-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .unit-selection {
+    margin-bottom: 10px;
+  }
+  
+  .distance-display {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  /* src/Styles/sidebar.css */
+  .measurement-tool {
+    /* Styling for the measurement tool popup */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1000; /* Ensure it is above other elements */
+  }
+  /* src/Styles/sidebar.css */
+  .leaflet-control-measure {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Ensure the measurement tool is visible */
+  }
+
+  /* src/Styles/measurementTool.css */
+.measurement-tool {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  
+  .measurement-tool-button {
+    background-color: #db4a29;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .measurement-result {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  

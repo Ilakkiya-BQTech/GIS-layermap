@@ -1,36 +1,10 @@
-// import React from 'react';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Sidebar from './Components/Sidebar/Sidebar';
-// import MapPage from './Components/Layermap/Layers';
-// import './App.css'
-
-// const App = () => {
-//   return (
-   
-//       <div className="App">
-//         <div className="layout">
-//           <Sidebar />
-//           <div className="map-container">
-//             <Routes>
-//               <Route path="/" element={<MapPage />} />
-//               {/* Add more routes here if needed */}
-//             </Routes>
-//           </div>
-//         </div>
-//       </div>
-   
-//   );
-// };
-
-// export default App;
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './Components/Sidebar/Sidebar';
 import MapPage from './Components/Layermap/Layers';
 import './App.css'; // Import global styles if needed
 import Navbar from './Components/Navbar/Navbar';
-
+import MapContainerComponent from './Components/FilterMap/Filtermap';
 const App = () => {
   const zoomIn = () => {
     
@@ -87,7 +61,7 @@ const App = () => {
         <div className="map-container">
           <Routes>
             <Route path="/" element={<MapPage />} />
-           
+            <Route path="/mapcontainer" element={<MapContainerComponent/>} />
           </Routes>
         </div>
       </div>
@@ -96,3 +70,18 @@ const App = () => {
 };
 
 export default App;
+// import React from 'react';
+// import { BrowserRouter as Routes, Route, Switch } from 'react-router-dom';
+// import MapPage from './Components/FilterMap/Filtermap';
+
+// const App = () => {
+//   return (
+   
+//       <div className="App">
+//                 <MapPage/>
+//       </div>
+   
+//   );
+// };
+
+// export default App;

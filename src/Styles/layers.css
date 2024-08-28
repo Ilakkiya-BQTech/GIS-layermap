@@ -3,3 +3,57 @@
   height: 100%;
   width: 100%;
 }
+.layerpanel{
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.3) ;
+  z-index: 1000;
+  border-radius: 4px;
+  max-height: 500px;
+  overflow-y: auto;
+  font-size: 13px;
+  cursor: pointer;
+}
+.layerpanel h4{
+  font-size: 15px;
+}
+.layerpanel [type=checkbox]{
+  cursor: pointer;
+}
+.layerpanel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+.feature-info-container {
+  position: absolute; /* Adjust this as needed */
+  bottom: 0;
+  left: 0;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+
+.feature-info-container p {
+  margin: 0; /* Remove default margins */
+  font-size: 16px; /* Adjust font size */
+  color: #333; /* Text color */
+}
+

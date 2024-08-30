@@ -5,6 +5,9 @@ import MapPage from './Components/Layermap/Layers';
 import './App.css'; // Import global styles if needed
 import Navbar from './Components/Navbar/Navbar';
 import MapContainerComponent from './Components/FilterMap/Filtermap';
+import TableInfo from './Components/Layermap/TableInfo';
+import GeoJsonMap from './Components/MapContainer/Feature';
+import Filtermap from './Components/Filters/Fiters';
 const App = () => {
   const zoomIn = () => {
     
@@ -44,7 +47,9 @@ const App = () => {
 
   return (
     <>
-    <Navbar/>
+    {/* <Filtermap/> */}
+   <GeoJsonMap/>
+    {/* <Navbar/>
       <div className="app-container">
       
         <Sidebar
@@ -64,7 +69,7 @@ const App = () => {
             <Route path="/mapcontainer" element={<MapContainerComponent/>} />
           </Routes>
         </div>
-      </div>
+      </div> */}
       </>
   );
 };

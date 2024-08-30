@@ -109,10 +109,10 @@ const Sidebar = ({ onAction, onFeatureClick }) => {
               <FaShareAlt />
               {isExpanded && <span className="sidebar-title">Share Map</span>}
             </div>
-            <div className="sidebar-item">
+            {/* <div className="sidebar-item">
               <FaMousePointer />
               {isExpanded && <span className="sidebar-title">Click Feature</span>}
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="sidebar-toggle" onClick={handleToggle}>

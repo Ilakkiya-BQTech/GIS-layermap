@@ -1,4 +1,4 @@
-/* Navbar Styles */
+/* Navbar Styles
 .navbar {
   display: flex;
   justify-content: space-between; 
@@ -27,9 +27,82 @@
 
 .navbar-signin svg {
   margin-right: 8px;
-}
+} */
 
 /* .navbar-toggle:hover,
 .navbar-signin:hover {
   color: #ddd;
 } */
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;          
+  padding: 0 15px;                
+  background-color: #fff;         
+  color: #000;                   
+  height: 50px;                   
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  position: fixed;              
+  width: 98%; /* Full width to cover the screen */
+  z-index: 9999;              
+}
+
+.navbar-toggle {
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  color: #000; /* Change to your preferred color */
+  font-size: 24px;
+}
+
+.navbar-signin a {
+  text-decoration: none;
+  color: #000; /* Change to your preferred color */
+}
+
+/* panel Styles */
+.panel {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.panel.open {
+  transform: translateX(0);
+}
+
+.panel a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.panel a:hover {
+  background-color: #555;
+  padding: 10px;
+}
+
+/* Responsive styles for mobile view */
+@media (max-width: 768px) {
+  .navbar {
+      padding: 0 10px;
+  }
+
+  .navbar-signin {
+      display: none; /* Hide the sign-in link on small screens */
+  }
+}

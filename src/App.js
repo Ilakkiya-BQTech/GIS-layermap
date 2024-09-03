@@ -4,10 +4,11 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import MapPage from './Components/Layermap/Layers';
 import './App.css'; // Import global styles if needed
 import Navbar from './Components/Navbar/Navbar';
-import MapContainerComponent from './Components/FilterMap/Filtermap';
 import TableInfo from './Components/Layermap/TableInfo';
 import GeoJsonMap from './Components/MapContainer/Feature';
 import Filtermap from './Components/Filters/Fiters';
+import SignInSignUp from './Components/LoginPage/Login';
+import MapContainerComponent from './Components/Layermap/Layers';
 const App = () => {
   const zoomIn = () => {
     
@@ -47,7 +48,8 @@ const App = () => {
 
   return (
     <>
-    {/* <Filtermap/> */}
+   
+    <Filtermap/>
    <GeoJsonMap/>
     {/* <Navbar/>
       <div className="app-container">
@@ -65,8 +67,12 @@ const App = () => {
         />
         <div className="map-container">
           <Routes>
-            <Route path="/" element={<MapPage />} />
-            <Route path="/mapcontainer" element={<MapContainerComponent/>} />
+          <Route path="/" element={<MapPage />} />
+          <Route path="/mapcontainer" element={<MapContainerComponent/>} />
+            <Route path="/filtermap" element={<Filtermap/>} />
+            
+              <Route path="/geojsonmap" element={<GeoJsonMap />} />
+              <Route path="/signin" element={<SignInSignUp />} />
           </Routes>
         </div>
       </div> */}

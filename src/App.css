@@ -1,8 +1,13 @@
 .app-container {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   padding-top: 50px;
 }
 
-  
+.leaflet-container{
+    height: calc(100vh - 50px);
+  }
+  /* .leaflet-touch .leaflet-bar a{
+    display: none !important;
+  } */
